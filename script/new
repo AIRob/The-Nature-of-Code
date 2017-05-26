@@ -1,0 +1,3 @@
+#!/bin/bash
+# usage: script/new chapter sketch
+mkdir -p $1/$2 && touch $1/$2/$2.pde

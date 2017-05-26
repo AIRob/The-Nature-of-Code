@@ -1,0 +1,7 @@
+#!/bin/bash
+# usage: script/copy chapter/sketch new_sketch
+DIR=`dirname $1`
+OLD_FILE=`basename $1`
+NEW_FILE=$2
+cp -R -f $DIR/$OLD_FILE $DIR/$NEW_FILE
+mv $DIR/$NEW_FILE/$OLD_FILE.pde $DIR/$NEW_FILE/$NEW_FILE.pde
