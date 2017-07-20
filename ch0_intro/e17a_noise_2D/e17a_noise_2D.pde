@@ -34,14 +34,14 @@ for (int x = 0; x < pixels.length; x++) {
 //  //for (int y = 0; y < height; y++) {
 //  //  // A random brightness!
 //  //  float bright = random(255);
-//  //  // 
+//  //  //
 //  //  println("x", x);
 //  //  println("y", y);
 //  //  println("x+y", x+y);
 //  //  println("x+y*width", x+y*width);
 //  //  pixels[x+y*width] = color(bright);
 //  //  //pixels[x+y] = color(bright);
-//  //  //pixels[x+y*height] = color(bright);  
+//  //  //pixels[x+y*height] = color(bright);
 //  //}
 //}
 

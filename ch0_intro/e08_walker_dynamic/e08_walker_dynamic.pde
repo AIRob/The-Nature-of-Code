@@ -52,7 +52,6 @@ Walker w;
 
 void setup() {
   size(640,360);
-  //fullScreen();
   w = new Walker();
   background(255);
 }

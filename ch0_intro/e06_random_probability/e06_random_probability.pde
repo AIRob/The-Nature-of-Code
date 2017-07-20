@@ -8,8 +8,8 @@
  * ---------------------------------------------------
  *
  * Fill an array with a selection of numbers—some of which are repeated
- * then choose random numbers from that array and generate events based on those choices. 
- * Running this code will produce a 40% chance of printing the value 1, 
+ * then choose random numbers from that array and generate events based on those choices.
+ * Running this code will produce a 40% chance of printing the value 1,
  * a 20% chance of printing 2, and a 40% chance of printing 3.
  */
 
@@ -29,7 +29,7 @@ int index = int(random(stuff.length));
  * b1) Random number ranges – single outcome
  * -----------------------------------------
  *
- * Ask for a random number and allow an event to occur only if our random number is 
+ * Ask for a random number and allow an event to occur only if our random number is
  * within a certain range.
  */
 
@@ -47,8 +47,8 @@ if (r < prob) {
  * b2) Random number ranges – multiple outcomes
  * --------------------------------------------
  *
- * This method can also be applied to multiple outcomes. Let’s say that Outcome A has a 60% 
- * chance of happening, Outcome B, a 10% chance, and Outcome C, a 30% chance. We implement 
+ * This method can also be applied to multiple outcomes. Let’s say that Outcome A has a 60%
+ * chance of happening, Outcome B, a 10% chance, and Outcome C, a 30% chance. We implement
  * this in code by picking a random float and seeing into what range it falls.
  *
  * - between 0.00 and 0.60 (60%) –> Outcome A

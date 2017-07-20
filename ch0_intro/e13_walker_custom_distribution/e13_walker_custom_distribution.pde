@@ -13,46 +13,46 @@
 // 4. If R2 is less than P, then we have found our number—R1!
 // 5. If R2 is not less than P, go back to step 1 and start over.
 //
-// Here we are saying that the likelihood that a random value will qualify is equal 
-// to the random number itself. Let’s say we pick 0.1 for R1. This means that R1 will 
-// have a 10% chance of qualifying. If we pick 0.83 for R1 then it will have a 83% 
+// Here we are saying that the likelihood that a random value will qualify is equal
+// to the random number itself. Let’s say we pick 0.1 for R1. This means that R1 will
+// have a 10% chance of qualifying. If we pick 0.83 for R1 then it will have a 83%
 // chance of qualifying.
 //
 
 class Walker {
   float x;
   float y;
-  
+
   Walker() {
     x = width/2;
-    y = height/2;    
+    y = height/2;
   }
-  
+
   void display() {
     stroke(0);
-    point(x,y);    
+    point(x,y);
   }
-  
+
   float montecarlo() {
     while (true) {
       float r1 = random(1);
       float probability = r1;
       float r2 = random(1);
-      
+
       if (r2 < probability) {
         return r1;
       }
     }
   }
-  
+
   void step() {
     float stepsize = montecarlo() * 10;
-    
+
     println(stepsize);
-    
+
     float stepx = random(-stepsize,stepsize);
-    float stepy = random(-stepsize,stepsize);    
-    
+    float stepy = random(-stepsize,stepsize);
+
     x += stepx;
     y += stepy;
   }

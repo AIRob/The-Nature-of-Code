@@ -13,12 +13,12 @@ void draw() {
   
   stroke(255);
   point(x,y);
-  
+
   if (x > width) {
     x = 0;
     s = random(0.001,0.01);
   } else {
-    x++;    
-  }  
+    x++;
+  }
   t += s;
 }

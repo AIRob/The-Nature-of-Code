@@ -63,10 +63,10 @@ float xoff = 0.0;
 // Columns
 for (int x = 0; x < width; x++) {
   // For every xoff, start yoff at 0
-  float yoff = 0.0;  
-  
-  float bright = map(noise(xoff, yoff), 0, 1, 0, 255);  
-  
+  float yoff = 0.0;
+
+  float bright = map(noise(xoff, yoff), 0, 1, 0, 255);
+
   // Rows
   for (int y = 0; y < height; y++) {
     //float bright = random(255);
@@ -76,8 +76,8 @@ for (int x = 0; x < width; x++) {
     // Use x and y for pixel location
     //pixels[x+(y*width)] = color(bright);
     yoff += 0.01;
-  } 
-  
+  }
+
   pixels[x] = color(bright);
 
   xoff += 0.01;
